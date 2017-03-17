@@ -4,7 +4,6 @@ import {Component, OnInit, OnChanges, DoCheck, AfterContentInit, AfterContentChe
   selector: 'ta-lifecycle',
   template: `
     <ng-content></ng-content>
-    <hr>
     <p #boundParagraph>{{bindable}}</p>
     <p>{{boundParagraph.textContent}}</p>
   `,
