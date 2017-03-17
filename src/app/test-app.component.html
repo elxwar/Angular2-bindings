@@ -1,0 +1,11 @@
+<h1>
+  Root Component
+</h1>
+<ta-lifecycle *ngIf="!delete" [bindable]="boundValue">
+  <p>{{test}}</p>
+</ta-lifecycle>
+<button (click)="delete = true">Click to delete</button>
+<button (click)="test = 'Changed value'">Click to change content</button>
+<button (click)="boundValue = 2000">Click to change binding</button>
+<hr>
+<ta-databinding></ta-databinding>

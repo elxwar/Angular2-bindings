@@ -1,0 +1,18 @@
+<h1>String Interpolation</h1>
+<p>
+  {{stringInterpolation}} | {{numberInterpolation}}
+</p>
+<hr>
+<h1>Property Binding</h1>
+<input type="text" [value]="stringInterpolation">
+<p [ngClass]="{'red-border': true}">is this styled?</p>
+<p [ngStyle]="{color: 'hotpink'}">is this styled?</p>
+<h3>
+  <ta-property-binding [result]="numberInterpolation"></ta-property-binding>
+</h3>
+<hr>
+<h1>Event Binding</h1>
+<ta-event-binding (clicked)="onClicked($event)"></ta-event-binding>
+<hr>
+<h1>Two-Way Binding</h1>
+<ta-two-way-binding></ta-two-way-binding>
